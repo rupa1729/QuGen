@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <link href="styleDash.css" rel="stylesheet" type="text/css" />
+  <style>
+    #slideshow {
+      overflow: hidden;
+      height: 480px;
+      width: 1200px;
+
+    }
+
+    .slide {
+      float: left;
+      height: 480px;
+      width: 1200px;
+    }
+
+    .wrapper {
+      width: calc(1200px * 3);
+
+      animation: slide 16s ease infinite;
+    }
+
+    @keyframes slide {
+      20% {
+        margin-left: 0px;
+      }
+
+      40% {
+        margin-left: calc(-1200px * 1);
+      }
+
+      60% {
+        margin-left: calc(-1200px * 2);
+      }
+    }
+  </style>
+</head>
+<header>
+  <a href:dash.html>
+    <h2>QuGen</h2>
+  </a>
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+    </ul>
+</header>
+
+
+<body>
+  <div>
+    <div>
+      <h3 class="title">My Dashboard</h3>
+    </div>
+      <div class="live">
+      <h2 id="livetopic">Import a Datset</h2>
+    </div>
+    <div class="firstblock">
+      <div class="selection">
+
+        <form name="form1" id="form1">
+          <div class="modellist"">
+     <label for=" model"> Choose File Format:
+             <select class="button" id="model" name="model">
+              <option value="">(Choose one)</option>
+              <option value="1">CSV</option>
+              <option value="2">JSON</option>
+              <option value="3">Excel</option>
+            </select>
+            </label>
+          </div>
+          <input type="submit" value="Choose file
+            " />
+        </form>
+      </div>
+     
+    </div>
+    <div class="live">
+      <h2 id="livetopic">Synthesize Data</h2>
+    </div>
+    <div class="feature">
+      
+       <form name="form2" id="form2">
+          <div class="modellist"">
+     <label for=" model">  Choose a Feature to synthesize:
+             <select class="button" id="model" name="model">
+              <option value="">(Choose one)</option>
+              <option value="1">Kurtosis</option>
+              <option value="2">Mean</option>
+              <option value="3">Standard Deviation</option>
+            </select>
+            </label>
+          </div>
+          <input type="submit" value="Run Model
+            " />
+        </form>
+      
+      
+    </div>
+<div class="live">
+      <h2 id="livetopic">Original Data Distribution</h2>
+    </div>
+    <div class="overview-boxes">
+      <div class="box">
+        <img src="someImage.png" alt="Origina Data distribution"></img>
+      </div>
+      
+    </div>
+
+    <div class="live">
+      <h2 id="livetopic">Synthetic Data Distribution</h2>
+    </div>
+    <div class="overview-boxes">
+      <div class="box">
+        <img src="someImage.png" alt="synthetic Data distribution"></img>
+      </div>
+      
+    </div>
+    <!-- Table -->
+
+    <!--table1-->
+    <div class="details">
+      <h2 id="detailstopic">QuGen Synthetics Report</h2>
+    </div>
+   <div class="report">
+     <h2 id="score">Synthetic Data Similarity Score:99%</h2>
+   </div>
+   
+
+</body>
+
+</html>
