@@ -1,0 +1,9 @@
+{
+    "environments": {
+        "qugen-api": {
+            "platform": "windows",
+            "transformer": "flask"
+        }
+    },
+    "notebook": "qugen.ipynb"
+}
